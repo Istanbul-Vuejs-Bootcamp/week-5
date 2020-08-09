@@ -9,7 +9,7 @@
         <button @click="increment"> Increment </button>
         <br>
         <br>
-        <button @click="increment2"> Increment </button>
+        <button @click="increment2"> Increment 2 </button>
     </div>
 </template>
 
@@ -20,13 +20,13 @@
         components: { ShowData },
         methods: {
             ...mapActions({
-                setCount: 'setCount'
+              setData: 'setCount'
             }),
             increment() {
                 this.$store.commit('increment');
             },
             increment2() {
-                this.setCount();
+                this.setData();
             }
         },
     }
