@@ -9,6 +9,7 @@ Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
 
+
 import './assets/custom.scss';
 new Vue({
   router,
